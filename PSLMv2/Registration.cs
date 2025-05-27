@@ -53,5 +53,10 @@ namespace PSLMv2
             Login login = new Login();
             login.Show();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

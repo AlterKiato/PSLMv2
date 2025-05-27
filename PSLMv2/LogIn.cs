@@ -12,7 +12,7 @@ namespace PSLMv2
 
         private void label1_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -28,7 +28,7 @@ namespace PSLMv2
             //username field (textUsername)
         }
 
-        private void guna2TextBox2_TextChanged(object sender, EventArgs e) 
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
         {
             //password field (textPassword)
         }
@@ -43,13 +43,18 @@ namespace PSLMv2
             {
                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                Dashboard dashboard = new Dashboard();
-                dashboard.Show();
+                CheckIn checkIn = new CheckIn();
+                checkIn.Show();
             }
             else
             {
                 MessageBox.Show("Invalid username or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
